@@ -12,15 +12,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cliente {
+public class Login {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
-    private String telefone;
-    private String cpf;
-    private String email;
+    private String usuario;
     private String senha;
-    private String dataNascimento;
 
 }
